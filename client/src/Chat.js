@@ -31,7 +31,7 @@ function Chat({socket, user, room}){
     return (
         <div className='chat-window'>
             <div className='chat-head'>
-                <p>{room}</p>
+                <div className='room-tag'><p>{room}</p></div>
             </div>
             <div className='chat-mid'>
                 {chat.map((msg, i) => {
