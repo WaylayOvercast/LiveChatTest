@@ -7,7 +7,7 @@ function Chat({socket, user, room}){
     const [chat, setChat] = useState([])
 
     const sendMsg = async () => {
-        if((msg !== '' || msg !== undefined)){
+        if((msg !== '' && msg !== undefined)){
             const msgInfo = {
                 room: room,
                 user: user,
